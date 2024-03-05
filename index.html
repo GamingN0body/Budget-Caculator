@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -353,66 +354,125 @@
         </section>
         <hr>
         <section class="calculations">
-            <h2>Calculations</h2>
-            <section class="split">
-                <section class="spending">
-                    <section class="governmentTax">
-                        <h3>Government Tax</h3>
-                        <img src="" alt="Information placeholder">
-                        <p>Federal Tax</p>
-                        <p>State Tax</p>
-                        <p>State Disability</p>
-                    </section>
-                    <section class="debtsAndLoans">
-                        <h3>Debts and loans</h3>
-                        <p>Credit Card</p>
-                        <p>Student Loan</p>
-                        <p>Debt</p>
-                    </section>
-                    <section class="housing">
-                        <h3>Housing</h3>
-                        <p>Tolls</p>
-                        <p>Child Care</p>
-                        <p>Utilities</p>
-                        <p>Food</p>
-                    </section>
-                    <section class="transportation">
-                        <h3>Transportation</h3>
-                        <p>Colothing</p>
-                        <p>Gas</p>
-                        <p>Maintenance</p>
-                    </section>
-                    <section class="other">
-                        <h3>Other</h3>
-                        <p>Healthcare</p>
-                        <p>Investments</p>
-                        <p>Gas</p>
-                        <p>Savings</p>
-                    </section>
+            <h2>Calculations</h2>    
+            <section class="labelinput">       
+                <label for="income">Put your income</label>
+                <input type="text" id="income">    
+            </section>       
+        </section>
+        <section class="split">
+            <section class="spending">
+                <section class="governmentTax">
+                    <h3>Government Tax</h3>
+                    <img src="" alt="Information placeholder">
+                    <div>
+                        <label for="federalTax">Federal Tax</label>
+                        <input type="text" id="federalTax">
+                    </div>
+                    <div>
+                        <label for="stateTax">State Tax</label>
+                        <input type="text" id="stateTax">
+                    </div>
+                    <div>
+                        <label for="stateDisability">State Disability</label>
+                        <input type="text" id="stateDisability">
+                    </div>
                 </section>
-                <section class="pieChart">
-                    <div id="piechart"></div>
-                    <section class="governmentTaxPie">
-                        <h3>Gov't Tax</h3>
-                    </section>
-                    <section class="debtsAndLoansPie">
-                        <h3>Debts</h3>
-                    </section>
-                    <section class="housingPie">
-                        <h3>Housing</h3>
-                    </section>
-                    <section class="transportationPie">
-                        <h3>Transportation</h3>
-                    </section>
-                    <section class="otherPie">
-                        <h3>Other</h3>
-                    </section>
-                    <section class="totalincomePie">
-                        <h3>Total Income</h3>
-                    </section>
+                <section class="debtsAndLoans">
+                    <div>
+                        <h3>Debts and loans</h3>
+                    </div>
+                    <div>
+                        <label for="creditCard">Credit Card</label>
+                        <input type="text" id="creditCard">
+                    </div>
+                    <div>
+                        <label for="studentLoan">Student Loan</label>
+                        <input type="text" id="studentLoan">
+                    </div>
+                    <div>
+                        <label for="debt">Debt</label>
+                        <input type="text" id="debt">
+                    </div>
+                </section>
+                <section class="housing">
+                    <h3>Housing</h3>
+                    <div>
+                        <label for="tolls">Tolls</label>
+                        <input type="text" id="tolls">
+                    </div>
+                    <div>
+                        <label for="childCare">Child Care</label>
+                        <input type="text" id="childCare">
+                    </div>
+                    <div>
+                        <label for="utilities">Utilities</label>
+                        <input type="text" id="debt">
+                    </div>
+                    <div>
+                        <label for="food">Food</label>
+                        <input type="text" id="food">
+                    </div>
+                </section>
+                <section class="transportation">
+                    <h3>Transportation</h3>
+                    <div>
+                        <label for="colothing">Colothing</label>
+                        <input type="text" id="colothing">
+                    </div>
+                    <div>
+                        <label for="gas">Gas</label>
+                        <input type="text" id="gas">
+                    </div>
+                    <div>
+                        <label for="maintenance">Maintenance</label>
+                        <input type="text" id="maintenance">
+                    </div>
+                </section>
+                <section class="other">
+                    <h3>Other</h3>
+                    <div>
+                        <label for="healthcare">Healthcare</label>
+                        <input type="text" id="healthcare">
+                    </div>
+                    <div>
+                        <label for="investments">Investments</label>
+                        <input type="text" id="investments">
+                    </div>
+                    <div>
+                        <label for="pet">Pet</label>
+                        <input type="text" id="pet">
+                    </div>
+                    <div>
+                        <label for="savings">Savings</label>
+                        <input type="text" id="savings">
+                    </div>
+                </section>
+            </section>
+            <section class="pieChart">
+                <div id="piechart"></div>
+                <section class="governmentTaxPie">
+                    <h3>Gov't Tax</h3>
+                </section>
+                <section class="debtsAndLoansPie">
+                    <h3>Debts</h3>
+                </section>
+                <section class="housingPie">
+                    <h3>Housing</h3>
+                </section>
+                <section class="transportationPie">
+                    <h3>Transportation</h3>
+                </section>
+                <section class="otherPie">
+                    <h3>Other</h3>
+                </section>
+                <section class="totalincomePie">
+                    <h3>Total Income</h3>
+                    <p id="totalIncome"></p>
                 </section>
             </section>
         </section>
+
         <hr>
         <section class="links">
             <h2>Links to professional help</h2>
