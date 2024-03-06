@@ -1,25 +1,24 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    //Gobal variables
-    let income = 0;
-    let totalIncome = document.getElementById("totalIncome");
 
 
     document.getElementById('income').addEventListener('change', function (eventData) {
+// it work and stuff, add more stuff according to this stuff to make the website better and stuff. code look bad but it work.
+    
+let federalTax = 0.1175;
 
+    let income = document.getElementById('income').value;
 
-    income = document.getElementById("income");// it dosent keep this value for the other functions
-
-    console.log(income.value)
+    federalTax = federalTax*income;
+    console.log(federalTax)
+    loannum.innerText = federalTax;
 
     })
 
-    document.getElementById('federalTax').addEventListener('change', function (eventData) {
-        income= income-federalTax;
-        console.log(income.value)
-        totalIncome.innerText = `$ ${income.value}`;
-    })
+
 
 
 
 });
+
+
