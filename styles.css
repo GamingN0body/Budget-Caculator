@@ -116,6 +116,11 @@ h2 {
     text-decoration: underline;
 }
 
+.style {
+    width: fit-content;
+    background-color: #9BC9E3;
+}
+
 #totalIncome {
     border: solid;
 }
