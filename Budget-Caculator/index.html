@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="jobs.js"></script>
+    <script src="graph.js"></script>
+</head>
+
+<body>
+    <header class="h1">
+        <h1>Budget Calculator</h1>
+        <p class="">This is a website that will calculate your expenses. This website will offer you a detailed choice
+            of jobs,
+            expenses, and ways to save.</p>
+    </header>
+    <main>
+        <section class="Save">
+            <section class="Wants">
+                <img id="img" src="images/Firefly food 17716.jpg" alt="vacation-island">
+                <h3>Wants</h3>
+                <p>Things that you can live without, like:
+                <ul>
+                    <li class="games">Video Games</li>
+                    <li class="pets">Pets</li>
+                    <li class="cable">Cable</li>
+                </ul>
+                </p>
+            </section>
+            <section class="Needs">
+                <img id="img" src="images/Firefly vacation to Hawaii 29235.jpg" alt="food-bowl">
+                <h3>Needs</h3>
+                <p> Things that you can't live without, like:
+                <ul>
+                    <li class="imHungie">Food</li>
+                    <li class="electricity">Electricity</li>
+                    <li class="clothing">Clothing</li>
+                </ul>
+                </p>
+            </section>
+            <section class="Savings">
+                <img id="img" src="images/Firefly retirement 29395.jpg" alt="old-man">
+                <h3>Savings</h3>
+                <p> Your left over money you want to save, like:
+                <ul>
+                    <li class="ohNoIMessedUp">Emergency Fund</li>
+                    <li class="break">Vacation</li>
+                    <li class="oldAge">Retirement</li>
+                </ul>
+                </p>
+            </section>
+        </section>
+        <hr>
+        <section class="calculations">
+            <h2>Calculations</h2>
+        </section>
+        <section class="box">
+            <h3>Career Occupation:</h3>
+            <select id="income"></select>
+            <section role="row">
+                <section class="housing">
+                    <h3>Housing</h3>
+                    <div class="column">
+                        <label for="tolls">Tolls</label>
+                        <input type="text" id="tolls">
+                    </div>
+                    <div class="column">
+                        <label for="childCare">Child Care</label>
+                        <input type="text" id="childCare">
+                    </div>
+                    <div class="column">
+                        <label for="utilities">Utilities</label>
+                        <input type="text" id="utilities">
+                    </div>
+                    <div class="column">
+                        <label for="food">Food</label>
+                        <input type="text" id="food">
+                    </div>
+                </section>
+                <section class="other">
+                    <h3>Other</h3>
+                    <div class="column">
+                        <label for="healthcare">Healthcare</label>
+                        <input type="text" id="healthcare">
+                    </div>
+                    <div class="column">
+                        <label for="investments">Investments</label>
+                        <input type="text" id="investments">
+                    </div>
+                    <div class="column">
+                        <label for="pet">Pet</label>
+                        <input type="text" id="pet">
+                    </div>
+                    <div class="column">
+                        <label for="savings">Savings</label>
+                        <input type="text" id="savings">
+                    </div>
+                </section>
+            </section>
+            <section role="row">
+                <section class="transportation">
+                    <h3>Transportation</h3>
+                    <div class="column">
+                        <label for="clothing">Clothing</label>
+                        <input type="text" id="clothing">
+                    </div>
+                    <div class="column">
+                        <label for="gas">Gas</label>
+                        <input type="text" id="gas">
+                    </div>
+                    <div class="column">
+                        <label for="maintenance">Maintenance</label>
+                        <input type="text" id="maintenance">
+                    </div>
+                </section>
+                <section class="spending">
+                    <h3>Debts and loans</h3>
+                    <div class="column">
+                        <label for="ceditCard">Credit Card</label>
+                        <input type="text" id="ceditCard">
+                    </div>
+                    <div class="column">
+                        <label for="studentLoan">studentLoan</label>
+                        <input type="text" id="studentLoan">
+                    </div>
+                    <div class="column">
+                        <label for="debt">Debt</label>
+                        <input type="text" id="debt">
+                    </div>
+                </section>
+            </section>
+            <section class="pieChart">
+                <section class="totalincomePie">
+                    <h3>Total Income</h3>
+                    <p id="totalIncome"></p>
+                </section>
+            </section>
+    </main>
+</body>
+
+</html>
